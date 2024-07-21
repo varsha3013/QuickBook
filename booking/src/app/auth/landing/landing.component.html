@@ -1,0 +1,214 @@
+<!-- <app-navbar></app-navbar> -->
+<!-- Header Section -->
+<header class="p-3 bg-white text-dark">
+    <div class="container">
+        <h1 class="display-4">The easy, reliable way to take care of your home.</h1>
+    </div>
+    <div class="d-flex  justify-content-equally">
+      <div class="">
+       <a href="" class="btn"><p class="lead ms-4"><i class="fa-solid fa-spray-can-sparkles bg-warning text-white "></i>Home Cleaning</p></a>
+      </div>
+      <a [routerLink]="['/register-worker']" href="#all-services" class="btn  lead m-6">Register A Worker</a>
+     </div>
+</header>
+
+<div class="ms-5" style="line: space 1.5em;;">
+  <h1 >Cleaning & Handyman Tasks.</h1>
+    <p>Instantly book highly rated pros for cleaning and handyman tasks at an upfront price.</p>
+
+    <div class="text-center">
+        <a [routerLink]="['/previous-bookings']" class="btn btn-primary " role="button" id="dropdownMenuLink" mdbDropdownToggle aria-expanded="false">
+          View Previous Bookings
+        </a>
+      </div>
+      
+
+</div>
+<!-- Service Categories Section -->
+<section id="all-services" class="service-categories py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                <a href="">
+                  <img src="/assets/homecl.png" class="card-img-top" alt="Home Cleaning">
+                  <div class="card-body">
+                      <h5 (click)="navigateToCleaning()"  class="card-title">Home Cleaning</h5>
+                  </div>
+                </a>
+              </div>
+          </div>
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                  <a href=""><img src="/assets/furniture.png" class="card-img-top" alt="Furniture Assembly">
+                    <div class="card-body">
+                        <h5 (click)="navigateToCarpentry()" class="card-title">Furniture Assembly</h5>
+                    </div></a>
+              </div>
+          </div>
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                  <a href=""><img src="/assets/TV.png" class="card-img-top" alt="TV Mounting">
+                    <div class="card-body">
+                        <h5 (click)="navigateToPlumbing()" class="card-title">Plumbing</h5>
+                    </div></a>
+              </div>
+          </div>
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                  <a href=""><img src="/assets/wall.png" class="card-img-top" alt="Wall Hanging">
+                    <div class="card-body">
+                        <h5 (click)="navigateToPainting()" class="card-title">Painting</h5>
+                    </div></a>
+              </div>
+          </div>
+          <!-- Add more service categories as needed -->
+      </div>
+  </div>
+</section>
+
+
+<!-- Home Improvement Projects Section -->
+<section class="home-improvement py-5 bg-light">
+    <div class="container">
+        <h2>Home Improvement Projects</h2>
+        <p class="lead">Get free quotes from top local home improvement pros on larger home projects.</p>
+    </div>
+</section>
+<section id="all-services" class="service-categories py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                <a href="">
+                  <img src="/assets/bathroom.png" class="card-img-top" alt="Home Cleaning">
+                  <div class="card-body">
+                      <h5 (click)="navigateToAppliances()" class="card-title">Appliances</h5>
+                  </div>
+                </a>
+              </div>
+          </div>
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                  <a href=""><img src="/assets/kitchen.png" class="card-img-top" alt="Furniture Assembly">
+                    <div class="card-body">
+                        <h5 class="card-title">Kitchen Remodelling </h5>
+                    </div></a>
+              </div>
+          </div>
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                  <a href=""><img src="/assets/major.png" class="card-img-top" alt="TV Mounting">
+                    <div class="card-body">
+                        <h5 class="card-title">Major Renovation </h5>
+                    </div></a>
+              </div>
+          </div>
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                  <a href=""><img src="/assets/install.png" class="card-img-top" alt="Wall Hanging">
+                    <div class="card-body">
+                        <h5 class="card-title">Install wood flooring</h5>
+                    </div></a>
+              </div>
+          </div>
+          <!-- Add more service categories as needed -->
+      </div>
+  </div>
+</section>
+
+
+
+<!-- Vetted Professionals Section -->
+<section class="vetted-professionals ">
+    <div class="container">
+        <h2>Vetted, Screened Professionals</h2>
+        <p>Cleaning and handyman tasks booked and paid for through Handy are performed by experienced, vetted providers who are highly rated by customers like you.</p>
+        <a href="#" class="center" >Learn more</a>
+    </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer class="footer">
+  <div class="container bottom_border">
+  <div class="row">
+  <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+  <!--headin5_amrc-->
+  <p class="mb10">From cleaners to handymen to smart home installers, Handy is always looking for service professionals who are experts in their trade and provide great service to their customers. The best home service professionals use Handy to find jobs with no lead fees and flexible scheduling</p>
+  <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+  <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+  <p><i class="fa fa fa-envelope"></i> infoexample.com  </p>
+
+
+  </div>
+
+
+  <div class=" col-sm-4 col-md  col-6 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+  <!--headin5_amrc-->
+  <ul class="footer_ul_amrc">
+  <li><a href="http://webenlance.com">Image Rectoucing</a></li>
+  <li><a href="http://webenlance.com">Clipping Path</a></li>
+  <li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+  <li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+  <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+  <li><a href="http://webenlance.com">Image Cropping</a></li>
+  </ul>
+  <!--footer_ul_amrc ends here-->
+  </div>
+
+
+  <div class=" col-sm-4 col-md  col-6 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+  <!--headin5_amrc-->
+  <ul class="footer_ul_amrc">
+  <li><a href="http://webenlance.com">Remove Background</a></li>
+  <li><a href="http://webenlance.com">Shadows & Mirror Reflection</a></li>
+  <li><a href="http://webenlance.com">Logo Design</a></li>
+  <li><a href="http://webenlance.com">Vectorization</a></li>
+  <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+  <li><a href="http://webenlance.com">Image Cropping</a></li>
+  </ul>
+  <!--footer_ul_amrc ends here-->
+  </div>
+
+
+  <div class=" col-sm-4 col-md  col-12 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+  <!--headin5_amrc ends here-->
+
+  <ul class="footer_ul2_amrc">
+  <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+  <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+  <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+  </ul>
+  <!--footer_ul2_amrc ends here-->
+  </div>
+  </div>
+  </div>
+
+
+  <div class="container">
+  <ul class="foote_bottom_ul_amrc">
+  <li><a href="http://webenlance.com">Home</a></li>
+  <li><a href="http://webenlance.com">Login</a></li>
+  <li><a href="http://webenlance.com">Services</a></li>
+  <li><a href="http://webenlance.com">Pricing</a></li>
+  <li><a href="http://webenlance.com">Blog</a></li>
+  <li><a href="http://webenlance.com">Contact</a></li>
+  </ul>
+  <!--foote_bottom_ul_amrc ends here-->
+  <p class="text-center">Copyright 2017 | Designed With by <a href="#">Your Company Name</a></p>
+
+  <ul class="social_footer_ul">
+  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+  <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+  <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+  <!--social_footer_ul ends here-->
+  </div>
+
+  </footer>

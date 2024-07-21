@@ -1,0 +1,71 @@
+<div class="container">
+    <!-- Left Half -->
+    <div class="left">
+      <!-- Image -->
+      <div class="image-container">
+        <img src="https://blog.herzing.ca/hubfs/pros%20and%20cons%20appliance%20repair.jpg" alt="Appliance Repair Service">
+        <div class="overlay"></div>
+        <div class="overlay-text">Appliance Repairing <span>Hurry up grab your services now</span></div>
+      </div>
+  
+      <!-- Content -->
+      <div class="content">
+        <p class="reviews">⭐⭐⭐⭐⭐   1,012 Reviews</p>
+        <p>When you have an appliance that needs repair, look no further than Handy. No matter how skilled you might be at home maintenance, some appliance issues should only ever be tackled by a professional. When you book appliance repair technicians through the Handy platform, you'll be booking a reliable professional who will diagnose the problem accurately and have all the right tools and expertise to fix it.</p>
+  
+        <ul>
+          <li>✅ Vetted and screened professionals.</li>
+          <li>✅ Friendly 24/7 customer service.</li>
+          <li>✅ Backed by the Handy Happiness Guarantee.</li>
+          <li>✅ Affordable, upfront pricing.</li>
+          <li>✅ No time windows, book when you want.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Right Half -->
+  
+
+
+
+
+    <div class="right">
+        <h1>Appliance Repairing Form</h1>
+        <div class="container">
+          <form [formGroup]="applianceRep" (submit)="submitForm()">
+            <label for="service">Appliance Repairing Service:</label>
+            <input type="text" id="service"  value="Appliance Repairing Service" readonly>
+      
+            <label for="zip_code">ZIP Code:</label>
+            <input type="text" id="zip_code"  placeholder="Enter ZIP Code..." required>
+      
+            <label for="job_description">Tell us about the job:</label>
+            <textarea id="job_description"  rows="4" placeholder="Describe the job..." required></textarea>
+      
+            <label for="job_details">Please describe the job in detail. (required)</label>
+            <textarea id="job_details" rows="4" placeholder="Please describe the job in detail..." required></textarea>
+      
+            <label for="hours">How many hours would you like to book?</label>
+            <input type="number" id="hours" min="1" value="2" required>
+      
+            <label for="preferred_time">When would you like a Pro to come?</label>
+            <input type="date" id="preferred_date"  required>
+            <input type="time" id="time" formControlName="time_selected" required>
+      
+            <label for="email">Email Address:</label>
+            <input type="email" id="email"  placeholder="Enter Email Address..." required>
+      
+            <label for="phone">Phone Number (Optional):</label>
+            <input type="tel" id="phone"  placeholder="Enter Phone Number..." pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+      
+            <input type="submit" value="Submit">
+            <a [routerLink]="['/payment']" class="btn btn-primary m-l-2 m-3" role="button" id="dropdownMenuLink" mdbDropdownToggle aria-expanded="false">
+                Pay Now
+            </a>
+            <a [routerLink]="['/landing']" class="btn btn-primary m-l-3 m-3" role="button" id="dropdownMenuLink" mdbDropdownToggle aria-expanded="false">
+                Cash On Delivery
+            </a>
+          </form>
+        </div>
+      </div>
+      

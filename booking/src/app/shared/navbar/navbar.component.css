@@ -1,0 +1,42 @@
+.navbar {
+    /* background-color: #ffffff; White background */
+    /* border-bottom: 1px solid #dee2e6; Border bottom */
+    padding: 1rem 0; /* Padding top and bottom */
+  
+  }
+  
+  .navbar-brand img {
+    max-height: 55px;
+  }
+  
+  .navbar-nav {
+    margin-left: auto; /* Move navbar items to the right */
+  }
+  
+  .nav-link {
+    color: #495057; /* Text color */
+    font-weight: bold; /* Bold font */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Hover color */
+  }
+  
+  /* Adjust form layout */
+  .d-flex input[type="search"] {
+    border-top-right-radius: 0; /* Remove border-radius on top right of input */
+    border-bottom-right-radius: 0; /* Remove border-radius on bottom right of input */
+  }
+  
+  .d-flex .btn {
+    border-top-left-radius: 0; /* Remove border-radius on top left of button */
+    border-bottom-left-radius: 0; /* Remove border-radius on bottom left of button */
+  }
+  
+  
+  .disabled {
+    pointer-events: none; /* Disable click events */
+    color: #6c757d; /* Change text color to gray */
+    text-decoration: none; /* Remove underline */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+  }

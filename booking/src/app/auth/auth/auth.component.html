@@ -1,0 +1,28 @@
+<div class="container note-form-container">
+  <h2 class="text-center mb-4">Register User</h2>
+  <form (submit)="submit()" [formGroup]="registerform">
+    <div class="form-group">
+      <label for="fname">Full Name</label>
+      <input type="text" class="form-control" id="fname" placeholder="Enter the full name" required formControlName="fullname">
+    </div>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter the username" required formControlName="username">
+    </div>
+    <div class="form-group">
+      <label for="Password">Password</label>
+      <input type="password" class="form-control" id="Password" placeholder="Enter the Password" required formControlName="password">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter the Email" required formControlName="email">
+    </div>
+    <div class="form-group">
+      <label for="phone_no">Phone No</label>
+      <input type="tel" class="form-control" id="phone_no" placeholder="Enter the Phone NO" required formControlName="mobile">
+    </div>
+    <div class="row justify-content-center">
+      <button  type="submit" class="btn btn-primary btn-block m-3 w-50">Register</button>
+    </div>
+  </form>
+</div>

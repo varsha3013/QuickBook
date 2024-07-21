@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Registration</title>
+    <link rel="stylesheet" href="worker.component.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+          <h1>Worker Registration</h1>
+          <form [formGroup]="registerWorker" (ngSubmit)="submitForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" formControlName="name" placeholder="Enter your name..." required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" formControlName="email" placeholder="Enter your email..." required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" formControlName="password" placeholder="Enter your password..." required>
+    
+            <label for="contact_number">Contact Number:</label>
+            <input type="tel" id="contact_number" formControlName="contact_number" placeholder="Enter your contact number..." pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+    
+            <label for="category">Category:</label>
+            <select id="category" formControlName="category" required>
+              <option value="">Select category</option>
+              <option value="cleaning">Cleaning</option>
+              <option value="plumbing">Plumbing</option>
+              <option value="carpentry">Carpentry</option>
+              <option value="appliances">Appliances</option>
+              <option value="painting">Painting</option>
+            </select>
+    
+            <label for="document">Upload Document:</label>
+            <input type="file" id="document" formControlName="document" accept=".pdf,.doc,.docx" required>
+    
+            <input type="submit" value="Register">
+          </form>
+        </div>
+    
+        <div class="right">
+          <img src="https://img.freepik.com/free-vector/construction-worker-uniform_1308-108773.jpg" alt="Right Image">
+        </div>
+      </div>
+</body>
+</html>

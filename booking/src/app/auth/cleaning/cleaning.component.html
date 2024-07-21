@@ -1,0 +1,66 @@
+<div class="container">
+    <!-- Left Half -->
+    <div class="left">
+      <!-- Image -->
+      <div class="image-container">
+        <img src="https://cmmonline.com/wp-content/uploads/office-cleaning_thumb-1200x627.jpg" alt="Cleaning Service">
+        <div class="overlay"></div>
+        <div class="overlay-text">Cleaning Services <span>Hurry up grab your services now</span></div>
+      </div>
+  
+      <!-- Content -->
+      <div class="content">
+        <p class="reviews">⭐⭐⭐⭐⭐   1,012 Reviews</p>
+        <p>When you have a cleaning task that needs professional attention, look no further than Handy. No matter how skilled you might be at home maintenance, some jobs should only ever be tackled by a professional, and cleaning is one of them. When you book cleaners through the Handy platform, you'll be booking a cheap but reliable cleaning professional who will know just where to look to find the source of the problem and who will have all the right tools and expertise to fix it.</p>
+  
+        <ul>
+          <li>✅ Vetted and screened professionals.</li>
+          <li>✅ Friendly 24/7 customer service.</li>
+          <li>✅ Backed by the Handy Happiness Guarantee.</li>
+          <li>✅ Affordable, upfront pricing.</li>
+          <li>✅ No time windows, book when you want.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="right">
+        <h1>Cleaning Service Request Form</h1>
+        <div class="container">
+            <form (submit)="submitForm()" [formGroup]="cleaningForm">
+                <input type="hidden" formControlName="category_id" value="1"> <!-- Hardcoded category_id value -->
+                <label for="pin_code">Pin Code:</label>
+                <input type="text" id="pin_code" placeholder="Enter Pin Code..." required>
+    
+                <label for="contact_number">Contact Number:</label>
+                <input type="tel" id="contact_number"  placeholder="Enter Contact Number..." pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+    
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" placeholder="Enter Email ID..." required>
+    
+                <label for="beds">Beds:</label>
+                <select id="beds" required>
+                    <option value="">Select Beds</option>
+                    <option *ngFor="let bed of bedsOptions" [value]="bed">{{ bed }}</option>
+                </select>
+    
+                <label for="baths">Baths:</label>
+                <select id="baths" required>
+                    <option value="">Select Baths</option>
+                    <option *ngFor="let bath of bathsOptions" [value]="bath">{{ bath }}</option>
+                </select>
+    
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" formControlName="time_selected" required>
+    
+                <input type="submit" value="Submit">
+                <a [routerLink]="['/payment']" class="btn btn-primary m-l-2 m-3" role="button" id="dropdownMenuLink" mdbDropdownToggle aria-expanded="false">
+                    Pay Now
+                </a>
+                <a [routerLink]="['/landing']" class="btn btn-primary m-l-3 m-3" role="button" id="dropdownMenuLink" mdbDropdownToggle aria-expanded="false">
+                    Cash On Delivery
+                </a>
+                
+            </form>
+        </div>
+    </div>
+    
